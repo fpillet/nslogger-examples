@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D2B2D1218007E3B00173B38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B2D1118007E3B00173B38 /* Foundation.framework */; };
+		3D2B2D1418007E3C00173B38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B2D1318007E3C00173B38 /* CoreGraphics.framework */; };
+		3D2B2D1618007E3C00173B38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B2D1518007E3C00173B38 /* UIKit.framework */; };
+		3D2B2D1C18007E3C00173B38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B2D1A18007E3C00173B38 /* InfoPlist.strings */; };
+		3D2B2D1E18007E3C00173B38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B2D1D18007E3C00173B38 /* main.m */; };
+		3D2B2D2218007E3C00173B38 /* LTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B2D2118007E3C00173B38 /* LTAppDelegate.m */; };
+		3D2B2D2D18007E3C00173B38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B2D2C18007E3C00173B38 /* Images.xcassets */; };
+		3D2B2D3418007E3C00173B38 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B2D3318007E3C00173B38 /* XCTest.framework */; };
+		3D2B2D3518007E3C00173B38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B2D1118007E3B00173B38 /* Foundation.framework */; };
+		3D2B2D3618007E3C00173B38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2B2D1518007E3C00173B38 /* UIKit.framework */; };
+		3D2B2D3E18007E3C00173B38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B2D3C18007E3C00173B38 /* InfoPlist.strings */; };
+		3D2B2D4018007E3C00173B38 /* LoggerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B2D3F18007E3C00173B38 /* LoggerTestTests.m */; };
+		3D2B2D4A180190D800173B38 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B2D49180190D800173B38 /* Main_iPhone.storyboard */; };
+		3D2B2D4D18019EAE00173B38 /* LTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B2D4C18019EAE00173B38 /* LTMainViewController.m */; };
+		3D2B2D501801AFD000173B38 /* LTLogFrequencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B2D4F1801AFD000173B38 /* LTLogFrequencyViewController.m */; };
+		3D2B2D531801B09200173B38 /* LogFrequencies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D2B2D511801B09200173B38 /* LogFrequencies.plist */; };
+		3D2B2D561801C1AC00173B38 /* LTDirectHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B2D551801C1AC00173B38 /* LTDirectHostViewController.m */; };
+		3D2B2D591801CAD900173B38 /* LTBonjourSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B2D581801CAD900173B38 /* LTBonjourSettingsController.m */; };
+		3D4DF5551801E202005F233D /* LTRunLogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DF5541801E202005F233D /* LTRunLogsViewController.m */; };
+		A9047644351D42AB8EF208F9 /* libPods-LoggerTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE4A06776734FD99567A4A1 /* libPods-LoggerTest.a */; };
+		D8D4B0FEC11C810EB03A30ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D4B26015BE3B64BCCC5AF4 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D2B2D3718007E3C00173B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2B2D0618007E3B00173B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2B2D0D18007E3B00173B38;
+			remoteInfo = LoggerTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D2B2D0E18007E3B00173B38 /* LoggerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoggerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2B2D1118007E3B00173B38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D2B2D1318007E3C00173B38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D2B2D1518007E3C00173B38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D2B2D1918007E3C00173B38 /* LoggerTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoggerTest-Info.plist"; sourceTree = "<group>"; };
+		3D2B2D1B18007E3C00173B38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D2B2D1D18007E3C00173B38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D2B2D1F18007E3C00173B38 /* LoggerTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoggerTest-Prefix.pch"; sourceTree = "<group>"; };
+		3D2B2D2018007E3C00173B38 /* LTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTAppDelegate.h; sourceTree = "<group>"; };
+		3D2B2D2118007E3C00173B38 /* LTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTAppDelegate.m; sourceTree = "<group>"; };
+		3D2B2D2C18007E3C00173B38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D2B2D3218007E3C00173B38 /* LoggerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoggerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2B2D3318007E3C00173B38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3D2B2D3B18007E3C00173B38 /* LoggerTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoggerTestTests-Info.plist"; sourceTree = "<group>"; };
+		3D2B2D3D18007E3C00173B38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D2B2D3F18007E3C00173B38 /* LoggerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerTestTests.m; sourceTree = "<group>"; };
+		3D2B2D49180190D800173B38 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3D2B2D4B18019EAE00173B38 /* LTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMainViewController.h; sourceTree = "<group>"; };
+		3D2B2D4C18019EAE00173B38 /* LTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTMainViewController.m; sourceTree = "<group>"; };
+		3D2B2D4E1801AFD000173B38 /* LTLogFrequencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTLogFrequencyViewController.h; sourceTree = "<group>"; };
+		3D2B2D4F1801AFD000173B38 /* LTLogFrequencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTLogFrequencyViewController.m; sourceTree = "<group>"; };
+		3D2B2D521801B09200173B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/LogFrequencies.plist; sourceTree = "<group>"; };
+		3D2B2D541801C1AC00173B38 /* LTDirectHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDirectHostViewController.h; sourceTree = "<group>"; };
+		3D2B2D551801C1AC00173B38 /* LTDirectHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDirectHostViewController.m; sourceTree = "<group>"; };
+		3D2B2D571801CAD900173B38 /* LTBonjourSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTBonjourSettingsController.h; sourceTree = "<group>"; };
+		3D2B2D581801CAD900173B38 /* LTBonjourSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTBonjourSettingsController.m; sourceTree = "<group>"; };
+		3D4DF5531801E202005F233D /* LTRunLogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRunLogsViewController.h; sourceTree = "<group>"; };
+		3D4DF5541801E202005F233D /* LTRunLogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRunLogsViewController.m; sourceTree = "<group>"; };
+		9AE4A06776734FD99567A4A1 /* libPods-LoggerTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoggerTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D4B26015BE3B64BCCC5AF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DEC6FB5994CB4B318392F685 /* Pods-LoggerTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerTest.xcconfig"; path = "Pods/Pods-LoggerTest.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D2B2D0B18007E3B00173B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2B2D1418007E3C00173B38 /* CoreGraphics.framework in Frameworks */,
+				3D2B2D1618007E3C00173B38 /* UIKit.framework in Frameworks */,
+				3D2B2D1218007E3B00173B38 /* Foundation.framework in Frameworks */,
+				A9047644351D42AB8EF208F9 /* libPods-LoggerTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2B2D2F18007E3C00173B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2B2D3418007E3C00173B38 /* XCTest.framework in Frameworks */,
+				3D2B2D3618007E3C00173B38 /* UIKit.framework in Frameworks */,
+				3D2B2D3518007E3C00173B38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D2B2D0518007E3B00173B38 = {
+			isa = PBXGroup;
+			children = (
+				3D2B2D1718007E3C00173B38 /* LoggerTest */,
+				3D2B2D3918007E3C00173B38 /* LoggerTestTests */,
+				3D2B2D1018007E3B00173B38 /* Frameworks */,
+				3D2B2D0F18007E3B00173B38 /* Products */,
+				DEC6FB5994CB4B318392F685 /* Pods-LoggerTest.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		3D2B2D0F18007E3B00173B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B2D0E18007E3B00173B38 /* LoggerTest.app */,
+				3D2B2D3218007E3C00173B38 /* LoggerTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D2B2D1018007E3B00173B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B2D1118007E3B00173B38 /* Foundation.framework */,
+				3D2B2D1318007E3C00173B38 /* CoreGraphics.framework */,
+				3D2B2D1518007E3C00173B38 /* UIKit.framework */,
+				3D2B2D3318007E3C00173B38 /* XCTest.framework */,
+				9AE4A06776734FD99567A4A1 /* libPods-LoggerTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D2B2D1718007E3C00173B38 /* LoggerTest */ = {
+			isa = PBXGroup;
+			children = (
+				3D9C770E1812E4E400A3288E /* ViewControllers */,
+				3D2B2D2018007E3C00173B38 /* LTAppDelegate.h */,
+				3D2B2D2118007E3C00173B38 /* LTAppDelegate.m */,
+				3D2B2D2C18007E3C00173B38 /* Images.xcassets */,
+				3D2B2D1818007E3C00173B38 /* Supporting Files */,
+				3D2B2D49180190D800173B38 /* Main_iPhone.storyboard */,
+				D8D4B26015BE3B64BCCC5AF4 /* Localizable.strings */,
+			);
+			path = LoggerTest;
+			sourceTree = "<group>";
+		};
+		3D2B2D1818007E3C00173B38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B2D1918007E3C00173B38 /* LoggerTest-Info.plist */,
+				3D2B2D1A18007E3C00173B38 /* InfoPlist.strings */,
+				3D2B2D1D18007E3C00173B38 /* main.m */,
+				3D2B2D1F18007E3C00173B38 /* LoggerTest-Prefix.pch */,
+				3D2B2D511801B09200173B38 /* LogFrequencies.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D2B2D3918007E3C00173B38 /* LoggerTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B2D3F18007E3C00173B38 /* LoggerTestTests.m */,
+				3D2B2D3A18007E3C00173B38 /* Supporting Files */,
+			);
+			path = LoggerTestTests;
+			sourceTree = "<group>";
+		};
+		3D2B2D3A18007E3C00173B38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B2D3B18007E3C00173B38 /* LoggerTestTests-Info.plist */,
+				3D2B2D3C18007E3C00173B38 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D9C770E1812E4E400A3288E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D2B2D4B18019EAE00173B38 /* LTMainViewController.h */,
+				3D2B2D4C18019EAE00173B38 /* LTMainViewController.m */,
+				3D2B2D4E1801AFD000173B38 /* LTLogFrequencyViewController.h */,
+				3D2B2D4F1801AFD000173B38 /* LTLogFrequencyViewController.m */,
+				3D2B2D541801C1AC00173B38 /* LTDirectHostViewController.h */,
+				3D2B2D551801C1AC00173B38 /* LTDirectHostViewController.m */,
+				3D2B2D571801CAD900173B38 /* LTBonjourSettingsController.h */,
+				3D2B2D581801CAD900173B38 /* LTBonjourSettingsController.m */,
+				3D4DF5531801E202005F233D /* LTRunLogsViewController.h */,
+				3D4DF5541801E202005F233D /* LTRunLogsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D2B2D0D18007E3B00173B38 /* LoggerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2B2D4318007E3C00173B38 /* Build configuration list for PBXNativeTarget "LoggerTest" */;
+			buildPhases = (
+				919E33CD6EC2478D9314637F /* Check Pods Manifest.lock */,
+				3D2B2D0A18007E3B00173B38 /* Sources */,
+				3D2B2D0B18007E3B00173B38 /* Frameworks */,
+				3D2B2D0C18007E3B00173B38 /* Resources */,
+				21DEC6F0FB344E549BE6FA6A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggerTest;
+			productName = LoggerTest;
+			productReference = 3D2B2D0E18007E3B00173B38 /* LoggerTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D2B2D3118007E3C00173B38 /* LoggerTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D2B2D4618007E3C00173B38 /* Build configuration list for PBXNativeTarget "LoggerTestTests" */;
+			buildPhases = (
+				3D2B2D2E18007E3C00173B38 /* Sources */,
+				3D2B2D2F18007E3C00173B38 /* Frameworks */,
+				3D2B2D3018007E3C00173B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D2B2D3818007E3C00173B38 /* PBXTargetDependency */,
+			);
+			name = LoggerTestTests;
+			productName = LoggerTestTests;
+			productReference = 3D2B2D3218007E3C00173B38 /* LoggerTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D2B2D0618007E3B00173B38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Florent Pillet";
+				TargetAttributes = {
+					3D2B2D3118007E3C00173B38 = {
+						TestTargetID = 3D2B2D0D18007E3B00173B38;
+					};
+				};
+			};
+			buildConfigurationList = 3D2B2D0918007E3B00173B38 /* Build configuration list for PBXProject "LoggerTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D2B2D0518007E3B00173B38;
+			productRefGroup = 3D2B2D0F18007E3B00173B38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D2B2D0D18007E3B00173B38 /* LoggerTest */,
+				3D2B2D3118007E3C00173B38 /* LoggerTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D2B2D0C18007E3B00173B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2B2D2D18007E3C00173B38 /* Images.xcassets in Resources */,
+				3D2B2D1C18007E3C00173B38 /* InfoPlist.strings in Resources */,
+				3D2B2D531801B09200173B38 /* LogFrequencies.plist in Resources */,
+				3D2B2D4A180190D800173B38 /* Main_iPhone.storyboard in Resources */,
+				D8D4B0FEC11C810EB03A30ED /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2B2D3018007E3C00173B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2B2D3E18007E3C00173B38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21DEC6F0FB344E549BE6FA6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-LoggerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		919E33CD6EC2478D9314637F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D2B2D0A18007E3B00173B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2B2D501801AFD000173B38 /* LTLogFrequencyViewController.m in Sources */,
+				3D2B2D2218007E3C00173B38 /* LTAppDelegate.m in Sources */,
+				3D4DF5551801E202005F233D /* LTRunLogsViewController.m in Sources */,
+				3D2B2D591801CAD900173B38 /* LTBonjourSettingsController.m in Sources */,
+				3D2B2D561801C1AC00173B38 /* LTDirectHostViewController.m in Sources */,
+				3D2B2D4D18019EAE00173B38 /* LTMainViewController.m in Sources */,
+				3D2B2D1E18007E3C00173B38 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2B2D2E18007E3C00173B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2B2D4018007E3C00173B38 /* LoggerTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D2B2D3818007E3C00173B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D2B2D0D18007E3B00173B38 /* LoggerTest */;
+			targetProxy = 3D2B2D3718007E3C00173B38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D2B2D1A18007E3C00173B38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2B2D1B18007E3C00173B38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D2B2D3C18007E3C00173B38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2B2D3D18007E3C00173B38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D2B2D511801B09200173B38 /* LogFrequencies.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D2B2D521801B09200173B38 /* Base */,
+			);
+			name = LogFrequencies.plist;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D2B2D4118007E3C00173B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D2B2D4218007E3C00173B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D2B2D4418007E3C00173B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC6FB5994CB4B318392F685 /* Pods-LoggerTest.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoggerTest/LoggerTest-Prefix.pch";
+				INFOPLIST_FILE = "LoggerTest/LoggerTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D2B2D4518007E3C00173B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC6FB5994CB4B318392F685 /* Pods-LoggerTest.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoggerTest/LoggerTest-Prefix.pch";
+				INFOPLIST_FILE = "LoggerTest/LoggerTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3D2B2D4718007E3C00173B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC6FB5994CB4B318392F685 /* Pods-LoggerTest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoggerTest.app/LoggerTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoggerTest/LoggerTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LoggerTestTests/LoggerTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3D2B2D4818007E3C00173B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC6FB5994CB4B318392F685 /* Pods-LoggerTest.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoggerTest.app/LoggerTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoggerTest/LoggerTest-Prefix.pch";
+				INFOPLIST_FILE = "LoggerTestTests/LoggerTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D2B2D0918007E3B00173B38 /* Build configuration list for PBXProject "LoggerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2B2D4118007E3C00173B38 /* Debug */,
+				3D2B2D4218007E3C00173B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2B2D4318007E3C00173B38 /* Build configuration list for PBXNativeTarget "LoggerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2B2D4418007E3C00173B38 /* Debug */,
+				3D2B2D4518007E3C00173B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D2B2D4618007E3C00173B38 /* Build configuration list for PBXNativeTarget "LoggerTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D2B2D4718007E3C00173B38 /* Debug */,
+				3D2B2D4818007E3C00173B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D2B2D0618007E3B00173B38 /* Project object */;
+}

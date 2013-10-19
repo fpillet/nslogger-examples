@@ -1,0 +1,16 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"Not defined" = "Not defined";
+
+"Incomplete" = "Incomplete";
+
+"%@ ms interval" = "%@ ms interval";
+
+"Bonjour browsing disabled" = "Bonjour browsing disabled";
+
+"Enabled, browse all domains." = "Enabled, browse all domains.";
+"Enabled, browse local domain only." = "Enabled, browse local domain only.";
+"Enabled, connect to '%@' only." = "Enabled, connect to '%@' only.";
+"Enabled, connect to '%@' only (local domain)." = "Enabled, connect to '%@' only (local domain).";
