@@ -2,9 +2,9 @@
 platform :ios, "9.0"
 
 target "LoggerTest" do
-    pod 'NSLogger'
+    pod 'NSLogger', :git => 'https://github.com/fpillet/NSLogger.git', :commit => 'HEAD'
 end
 
 target "LoggerTestTests" do
-    pod 'NSLogger'
+    pod 'NSLogger', :git => 'https://github.com/fpillet/NSLogger.git', :commit => 'HEAD'
 end
