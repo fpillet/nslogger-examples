@@ -62,14 +62,17 @@ static void logRandomImage(int numImage);
 		LoggerSetViewerHost(NULL, NULL, 0);
 
 	uint32_t options = kLoggerOption_UseSSL;
+    BOOL captureConsole = NO;
 	if ([ud boolForKey:@"browseBonjour"])
 		options |= kLoggerOption_BrowseBonjour;
 	if ([ud boolForKey:@"browseOnlyLocalDomain"])
 		options |= kLoggerOption_BrowseOnlyLocalDomain;
 	if ([ud boolForKey:@"bufferLogs"])
 		options |= kLoggerOption_BufferLogsUntilConnection;
-	if  ([ud boolForKey:@"captureConsole"])
+    if  ([ud boolForKey:@"captureConsole"]) {
 		options |= kLoggerOption_CaptureSystemConsole;
+        captureConsole = YES;
+    }
 
 	LoggerSetOptions(NULL, options);
 
@@ -84,21 +87,21 @@ static void logRandomImage(int numImage);
 		{
 			dispatch_async(self.loggingQueues[q], ^{
 				int phase = arc4random() % 10;
-				if (phase == 7)
+				if (phase == 7 && captureConsole)
 				{
 					NSLog(@"Some message %d to NSLog", counter++);
 				}
-				else if (phase == 6)
+				else if (phase == 6 && captureConsole)
 				{
 					fprintf(stdout, "Some message %d to stdout\n", counter++);
 					fflush(stdout);		// required for stdout to be flushed when not connected to Xcode debugger
 				}
-				else if (phase == 5)
+				else if (phase == 5 && captureConsole)
 				{
 					fprintf(stderr, "Some message %d to stderr\n", counter++);
 					fflush(stderr);
 				}
-				else if (phase != 1)
+				else if (phase != 1 && phase != 5)
 				{
 					NSMutableString *s = [NSMutableString stringWithFormat:@"test log message %d - Random characters follow: ", counter++];
 					int nadd = 1 + arc4random() % 150;
