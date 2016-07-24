@@ -9,10 +9,6 @@
 #import "LTMainViewController.h"
 #import "LTRunLogsViewController.h"
 
-@interface LTMainViewController ()
-
-@end
-
 @implementation LTMainViewController
 
 - (void)viewDidLoad
@@ -65,7 +61,7 @@
 	else if (![host length] || port  == 0)
 		text = NSLocalizedString(@"Incomplete", @"");
 	else
-		text = [NSString stringWithFormat:@"%@:%d", host, port];
+		text = [NSString stringWithFormat:@"%@:%d", host, (int)port];
 	self.directHostCell.detailTextLabel.text = text;
 }
 

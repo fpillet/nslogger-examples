@@ -9,7 +9,7 @@
 #import "LTRunLogsViewController.h"
 #import "LoggerClient.h"
 
-#define NUM_LOGGING_QUEUES	10
+#define NUM_LOGGING_QUEUES	2
 
 static void logRandomImage(int numImage);
 
@@ -54,7 +54,7 @@ static void logRandomImage(int numImage);
 
 	// Configure direct host
 	NSString *host = [([ud stringForKey:@"directHost"] ?: @"") stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-	int port = [([ud objectForKey:@"directPort"] ?: @0) integerValue];
+	UInt32 port = (UInt32)[([ud objectForKey:@"directPort"] ?: @0) unsignedIntegerValue];
 	port = MAX(0, MIN(port, 65535));
 	if ([host length] && port != 0)
 		LoggerSetViewerHost(NULL, (__bridge CFStringRef) host, (UInt32) port);
@@ -74,7 +74,7 @@ static void logRandomImage(int numImage);
 	LoggerSetOptions(NULL, options);
 
 	// Start logging random messages
-	uint64_t interval = (uint64_t) [[ud objectForKey:@"logInterval"] integerValue] * 1000LL * 1000LL;
+	uint64_t interval = ((uint64_t) [[ud objectForKey:@"logInterval"] integerValue] * 1000LL * 1000LL) * (uint64_t)NUM_LOGGING_QUEUES;
 	counter = 0;
 	imagesCounter = 0;
 	self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
